@@ -11,7 +11,9 @@ if enable_css == true && options[:scripts].nil? %>
 
 <%= gmaps4rails_js_files(options[:map_options], options[:scripts], enable_js) %>
 <script type="text/javascript" charset="utf-8">
+//<![CDATA[
 <%=raw options.to_gmaps4rails %>
+//]]>
 </script>
 
 <% end %>
